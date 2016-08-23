@@ -1,0 +1,111 @@
+﻿
+#attendees-header{
+    color: #373737;
+    font-size: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+#attendees-summary{
+    text-align:center;
+    color: #373737;
+    font-size: 18px;
+    line-height:24px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.attendees{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    vertical-align: top;
+    width: 600px;
+    overflow: hidden;
+}
+
+.client-attendees{
+    border: 2px solid #9B9B9B;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+h3{
+    color: #F69B1F;
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.client-contact-info{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#373737; 
+        line-height: 6px;
+        padding-bottom: 40px;
+}
+.client-email{
+    font-weight: bold;
+}
+.client-address{
+    float: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.client-email-phone{
+    float: right;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.attendee{
+    border-top: 1px solid #9B9B9B;
+    color:#373737; 
+    clear:both;
+    height: 50px;
+    padding: 12px 20px 12px 20px;
+}
+
+.attendee-name{
+    float: left;
+    font-size: 18px;
+    color: #373737;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.attendee-email{
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373737;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.phone-number{
+    float: right;
+}
+
+.no-attendees{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.no-clients{
+    text-align: center;
+    height: 36px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+

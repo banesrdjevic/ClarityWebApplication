@@ -1,0 +1,65 @@
+﻿@using WebApplication3.ViewModels
+@using WebApplication3.DataAccessLayer
+@{
+    ViewBag.Title = "Attendees";
+}
+<section class="top-section">
+    <header>
+        <h1 id="attendees-header">
+            ATTENDEES
+        </h1>
+    </header>
+    <p id="attendees-summary">
+        See who has already registered for the Clarity Client Conference.
+    </p>
+</section>
+
+<section class="attendees">
+    @if (((List<ClientAttendeeViewModel>) ViewData["clients"]).Count() == 0)
+    {
+        <div class="client-attendees no-clients">
+            No Clients Registered
+        </div>
+    }
+    else{ 
+        foreach (ClientAttendeeViewModel item in ViewData["clients"] as List<ClientAttendeeViewModel>)
+        {
+        <div class="client-attendees">
+            <section class="client-info">
+                <h3>@item.ClientName</h3>
+                <div class="client-contact-info">
+                    <div class="client-address">
+                        <p class="street-address">@item.ClientStreetAddress</p>
+                        <p class="city-state-zip">@item.ClientCity, @item.ClientState @item.ClientZip</p>
+                    </div>
+                    <div class="client-email-phone">
+                        <p class="phone-number">@item.ClientPhone</p>
+                        <p class="client-email">@item.ClientEmail</p>
+                    </div>
+                </div>
+            </section>
+            @if (item.Attendees.Count() == 0)
+            {
+                <section class="attendee no-attendees">
+                    No Attendees Registered
+                </section>
+            }
+            else {
+                foreach (Attendee attendee in item.Attendees) {
+                <section class="attendee">
+                    <p class="attendee-name">@attendee.first_name @attendee.last_name</p>
+                    <p class="attendee-email">@attendee.email</p>
+                </section>
+                }
+            }
+        </div>
+        }
+    }
+</section>
+
+<a href="/Register/Register" class="clarity-button" id="register-button">REGISTER</a>
+
+
+
+}
+

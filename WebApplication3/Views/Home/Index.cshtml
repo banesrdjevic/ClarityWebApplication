@@ -1,0 +1,54 @@
+﻿@using WebApplication3.ViewModels
+@model WebApplication3.ViewModels.ConferenceViewModel
+@{
+    ViewBag.Title = "Home Page";
+    var conference = ViewData["conference"] as ConferenceViewModel;
+}
+
+<section id="top-section">
+    <header>
+        <img id="logo" src="/Content/Images/logo-symbol.png" />
+        <h1 id="top-header">
+            CLARITY<br />
+            CLIENT CONFERENCE
+        </h1>
+    </header>
+    <p id="top-summary">
+        @conference.ConferenceDescription
+    </p>
+    <p id="top-time">
+        Friday, March 3<br />
+        6:00 PM
+    </p>
+
+    <a href="/Register/Register" class="clarity-button" id="register-button">REGISTER</a>
+</section>
+
+<section id="conference-info">
+    <header>
+        <h1 id="bottom-header">CONFERENCE INFO</h1>
+    </header>
+    <p id="bottom-summary">
+        The Clarity Client Conference will be hosted<br />
+        in the historic Civic Opera Building.
+    </p>
+    <div id="date-time-wrapper">
+        <figure id="time-wrapper">
+            <img id="calendar-icon" src="/Content/Images/calendar-icn.png" />
+            <figcaption id="bottom-time">
+                Friday, March 3<br />
+                6:00PM
+            </figcaption>
+        </figure>
+        <figure id="location-wrapper">
+            <img id="location-icon" src="/Content/Images/location-icn.png" />
+            <figcaption id="bottom-location">
+                Civic Opera Building<br />
+                Chicago, IL
+            </figcaption>
+        </figure>
+    </div>
+    <div id="map-container">
+        <img id="map" src="/Content/Images/map.png" />
+    </div>
+</section>

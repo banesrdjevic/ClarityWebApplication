@@ -1,0 +1,121 @@
+﻿#logo{
+    height:49px;
+    width: 48px;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#top-header {
+    color: #373737;
+    font-size: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+#top-summary{
+    text-align:center;
+    color: #373737;
+    font-size: 18px;
+    line-height:24px;
+    margin-bottom:80px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+}
+
+#top-time{
+    text-align:center;
+    color: #373737;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 80px;
+}
+
+#conference-info{
+    background-color: #2d2d2d;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+#bottom-header{
+    color: white;
+    font-size: 46px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bottom-summary{
+    text-align:center;
+    color: white;
+    font-size: 18px;
+    line-height:24px;
+
+    margin-bottom:80px;
+    font-family: 'Malgun Gothic';
+}
+
+#date-time-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom-time{
+    color:white;
+}
+
+#bottom-location{
+    color:white;
+}
+
+#location-icon{
+    height:38px;
+    width: 38px;
+    margin-right: 10px;
+}
+
+#calendar-icon{
+    height:38px;
+    width: 38px;
+    margin-right: 10px;
+}
+
+#time-wrapper{
+    display: flex;
+}
+
+#location-wrapper{
+    margin-left: 50px;
+    display: flex;
+}
+
+#map{
+    height: auto;
+    width: 100%;
+}
+
+#map-container{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 90%;
+    width: 90%;
+    max-width: 904px;
+    max-height: 365px;
+}
+

@@ -1,0 +1,127 @@
+﻿@using WebApplication3.DataAccessLayer
+@model WebApplication3.DataAccessLayer.Client
+
+@{
+    ViewBag.Title = "Registration Page";
+}
+
+<section id="top-section">
+    <header>
+        <h1 id="registration-header">
+            REGISTER
+        </h1>
+    </header>
+    <p id="registration-summary">
+        Please select a type of registration:
+    </p>
+    <div class="btn-group-wrap">
+        <div class="btn-group btn-group-lg registration-type-button">
+            <button type="button" class="btn btn-primary active" id="client-button">CLIENT</button>
+            <button type="button" class="btn btn-primary" id="attendee-button">ATTENDEE</button>
+        </div>
+    </div>
+</section>
+<div id="client-form-container">
+    <div class="form-group">
+        <form id="client-form" action="/Register/RegisterClient" method="post">
+            <input type="text" required class="form-control" id="client-name" name="name" placeholder="Client Name">
+            <input type="text" required class="form-control" id="street-address" name="adr_street" placeholder="Street Address">
+            <div class="input-container">
+                <input type="text" required class="form-control col-xs-3" id="city" name="adr_city" placeholder="City">
+                <select name="adr_state" required id="state" class="form-control col-xs-3">
+                    <option value="" disabled selected>State</option>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="DC">DC</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
+                <input type="text" required class="form-control col-xs-3" id="zip" name="adr_zip" placeholder="Zip">
+            </div>
+            <div class="input-container">
+                <input type="email" required class="form-control col-xs-3" id="client-email" name="email" placeholder="E-mail">
+                <input type="text" required class="form-control col-xs-3" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="alert alert-danger zip-danger" style="display:none">
+               Please use only numbers for the Zip Code.
+            </div>
+            <div class="alert alert-danger phone-danger" style="display:none">
+                Please use only numbers, spaces, (), and - in your phone number.
+            </div>
+            <input type="submit" class="clarity-button" id="client-submit-button" value="SUBMIT">
+        </form>
+    </div>
+</div>
+
+<div id="attendee-form-container" style="display:none">
+    <form action="/Register/RegisterAttendee" method="post">
+        <div class="form-group">
+            <div class="input-container">
+                <input type="text" required class="form-control col-xs-3" id="first-name" name="first_name" placeholder="First Name">
+                <input type="text" required class="form-control col-xs-3" id="last-name" name="last_name" placeholder="Last Name">
+            </div>
+            <input type="email" required class="form-control col-xs-3" id="attendee-email" name="email" placeholder="E-mail">
+            <select name="client_id" required id="client-select" class="form-control col-xs-3">
+                @if (((List<Client>)ViewData["clients"]).Count() == 0)
+                {
+                    <option value="" disabled selected>No Clients Available.</option>
+                }
+                else
+                {
+                    <option value="" disabled selected>Client</option>
+                    foreach (Client item in ViewData["clients"] as List<Client>)
+                    {
+                        <option value='@item.id'>@item.name</option>
+                    }
+                }
+            </select>
+            <input type="submit" class="clarity-button" id="attendee-submit-button" value="SUBMIT">
+        </div>
+    </form>
+</div>

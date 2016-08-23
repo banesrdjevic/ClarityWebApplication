@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#clarity-logo{
+    height:33px;
+    width:134px;
+    margin-left: 60px;
+}
+.navbar{
+    background-color: white;
+    border:none;
+    max-width: 1024px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav.navbar-nav.navbar-right > li > a{
+    color: #373737;
+}
+.nav.navbar-nav.navbar-right > li > a:hover{
+    color:#e68a00;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+#register-button, #client-submit-button, #attendee-submit-button{
+    background-color: #F69B1F; /*Orange*/
+    border-radius: 3px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 16px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+#register-button{
+    margin-bottom: 160px;
+}

@@ -1,0 +1,163 @@
+﻿
+#registration-header{
+    color: #373737;
+    font-size: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+#registration-summary{
+    text-align:center;
+    color: #373737;
+    font-size: 18px;
+    line-height:24px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color:  #373737;
+    border-color: #373737;
+}
+
+.btn-primary{
+    border-color: #373737;
+    background-color:  #4A4A4A;
+    color: white;
+    border-radius: 4px;
+    width: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-group{
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+
+.btn-group-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#client-form-container,
+#attendee-form-container{
+    width: 400px;
+    display:block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 400px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.form-control{
+    max-width: 400px;
+    width: 400px;
+    margin: 0 0 0 0;
+}
+
+#client-name{
+    background-color: #F0F2F2;
+}
+
+#street-address {
+    background-color: #F0F2F2;
+}
+
+#city{
+    width: 190px;
+    background-color: #F0F2F2;
+}
+
+#state{
+    width: 100px;
+    margin-left: 20px;
+    background-color: #F0F2F2;
+    height: 40px;
+}
+
+select{
+    -webkit-appearance: none;
+    background: url(/Content/Images/dropdown-arrow.png) no-repeat right;
+    background-size: 15px 12px;
+    background-origin: content-box;
+    padding-right: 12px;
+}
+
+#state-option{
+    color:white;
+}
+#zip{
+    width: 70px;
+    margin-left: 20px;
+    background-color: #F0F2F2;
+}
+
+#phone{
+    width: 190px;
+    margin-left: 20px;
+    background-color: #F0F2F2;
+}
+
+#client-email{
+    width: 190px;
+    background-color: #F0F2F2;
+}
+
+#attendee-email{
+    width: 400px;
+    background-color: #F0F2F2;
+}
+#first-name,
+#last-name{
+    width: 190px;
+    background-color: #F0F2F2;
+}
+
+#last-name{
+    margin-left: 20px;
+}
+
+#client-submit-button.clarity-button, #attendee-submit-button.clarity-button{
+    margin-top: 40px;
+    display: inline-block;
+}
+
+#client-select{
+    background-color: #F0F2F2;
+    height: 40px;
+}
+
+.red-box{
+    border-color: red;
+}
+
+ .zip-danger, .phone-danger{
+     display: inline-block;
+     width: 400px;
+     margin-bottom: 0px;
+ }
+
+ .phone-danger{
+     margin-top: 10px;
+ }
